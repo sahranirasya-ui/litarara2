@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Dashboard Siswa</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 20px;
+            color: #1e293b;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: var(--primary);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        h2 { border-bottom: 2px solid var(--primary); padding-bottom: 5px; font-size: 1.2rem; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px 0; border-bottom: 1px solid #edf2f7; }
+        a { color: var(--primary); text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #64748b; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Portal Siswa XII</h1>
+        <p>Semangat Belajar & Persiapan Masa Depan</p>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Link Belajar</h2>
+            <ul>
+                <li><a href="https://pijarbelajar.id" target="_blank">Pijar Belajar</a></li>
+                <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
+                <li><a href="https://rumahbelajar.kemdikbud.go.id" target="_blank">Rumah Belajar</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Agenda Minggu Ini</h2>
+            <ul>
+                <li>✅ Tugas Matematika Lanjut</li>
+                <li>⏳ Persiapan Ujian Sekolah</li>
+                <li>⏳ Rapikan Portofolio</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Persiapan Kuliah</h2>
+            <ul>
+                <li><a href="https://snpmb.bppp.kemdikbud.go.id" target="_blank">Info SNPMB / SNBP</a></li>
+                <li><a href="#" target="_blank">Cek Passing Grade</a></li>
+                <li><a href="#" target="_blank">List Jurusan Impian</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        Dibuat oleh Litarara &bull; 2026
+    </div>
+</div>
+
+</body>
+</html>
