@@ -3,122 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Kelas XII-G</title>
+    <title>XII-G TEKNIK 1 | Portal Kelas</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --white: #ffffff;
+        }
+
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
             margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 40px;
             padding: 20px;
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 20px;
+
+        section {
+            background: var(--white);
+            padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
-        header {
+
+        h2 {
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        /* Gaya Struktur Kelas */
+        .struktur-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
             text-align: center;
-            border-bottom: 3px solid #3498db;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
         }
-        h2 { color: #2980b9; margin-top: 30px; }
+
+        .jabatan-card {
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .jabatan-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .role {
+            font-weight: bold;
+            color: var(--accent-color);
+            display: block;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .name {
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Gaya Jadwal Piket */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            margin-top: 10px;
         }
+
         th, td {
-            border: 1px solid #ddd;
             padding: 12px;
             text-align: left;
+            border-bottom: 1px solid #ddd;
         }
-        th { background-color: #3498db; color: white; }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
         tr:nth-child(even) { background-color: #f9f9f9; }
-        .info-box {
-            display: flex;
-            justify-content: space-around;
-            background: #e8f4fd;
-            padding: 15px;
-            border-radius: 10px;
-            font-weight: bold;
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
+<header>
+    <h1>XII-G TEKNIK 1</h1>
+    <p>Solidaritas Tanpa Batas, Teknik di Dada!</p>
+</header>
+
 <div class="container">
-    <header>
-        <h1>MANAJEMEN KELAS XII-G</h1>
-        <p>Tahun Ajaran 2025/2026</p>
-    </header>
+    
+    <section id="struktur">
+        <h2>Struktur Organisasi</h2>
+        <div class="struktur-grid">
+            <div class="jabatan-card">
+                <span class="role">Wali Kelas</span>
+                <span class="name">Bp. Ahmad, S.T.</span>
+            </div>
+            <div class="jabatan-card">
+                <span class="role">Ketua Kelas</span>
+                <span class="name">Rizky Pratama</span>
+            </div>
+            <div class="jabatan-card">
+                <span class="role">Wakil Ketua</span>
+                <span class="name">Siti Aminah</span>
+            </div>
+            <div class="jabatan-card">
+                <span class="role">Sekretaris</span>
+                <span class="name">Budi Santoso</span>
+            </div>
+            <div class="jabatan-card">
+                <span class="role">Bendahara</span>
+                <span class="name">Dewi Lestari</span>
+            </div>
+        </div>
+    </section>
 
-    <div class="info-box">
-        <span>Jumlah Siswa: 37</span>
-        <span>Ketua Kelas: edelwin suviriyananda</span>
-        <span>SMAN 1 TARAKAN</span>
-    </div>
+    <section id="piket">
+        <h2>Jadwal Piket Kebersihan</h2>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Petugas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Senin</strong></td>
+                        <td>Andi, Budi, Citra, Dedi, Eka</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Selasa</strong></td>
+                        <td>Fajar, Gita, Hana, Iwan, Jaka</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rabu</strong></td>
+                        <td>Kiki, Lulu, Mira, Nana, Oki</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kamis</strong></td>
+                        <td>Putra, Rara, Siska, Tono, Udin</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jumat</strong></td>
+                        <td>Vina, Wawan, Xena, Yoga, Zara</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-    <h2>📅 Jadwal Pelajaran</h2>
-    <table>
-        <tr>
-            <th>Senin</th>
-            <th>Selasa</th>
-            <th>Rabu</th>
-            <th>Kamis</th>
-            <th>Jumat</th>
-        </tr>
-        <tr>
-            <td>B.INDONESIA</td>
-            <td>SENI BUDAYA</td>
-            <td>PKN</td>
-            <td>INFORMATIKA</td>
-            <td>PJOK</td>
-        </tr>
-        <tr>
-            <td>MTK LANJUT</td>
-            <td>AGAMA</td>
-            <td>FISIKA</td>
-            <td>FISIKA</td>
-        </tr>
-        <tr>
-            <td>PKWU</td>
-            <td>MTK WAJIB</td>
-            <td>FISIKA</td>
-            <td>KIMIA</td>
-            <td>INFORMATIKA</td>
-        </tr>
-    </table>
-
-    <h2>🧹 Jadwal Piket Kebersihan</h2>
-    <table>
-        <tr>
-            <th>Hari</th>
-            <th>Petugas Piket</th>
-        </tr>
-        <tr>
-            <td>Senin</td>
-            <td>Andi, Budi, Citra, Dina</td>
-        </tr>
-        <tr>
-            <td>Selasa</td>
-            <td>Eko, Fani, Gani, Hana</td>
-        </tr>
-        <tr>
-            <td>Rabu</td>
-            <td>Irfan, Jaka, Kezia, Lita</td>
-        </tr>
-    </table>
-
-    <footer style="text-align: center; margin-top: 30px; font-size: 0.8rem; color: #888;">
-        Website Kelas XII &copy; 2026
-    </footer>
 </div>
+
+<footer>
+    &copy; 2024 XII-G TEKNIK 1 - SMK Negeri Indonesia
+</footer>
 
 </body>
 </html>
-
