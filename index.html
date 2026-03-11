@@ -3,36 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Siswa XII</title>
+    <title>Dashboard Kelas XII-G</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: white; display: flex; justify-content: center; padding: 20px; }
-        .card { background: #1e293b; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 500px; width: 100%; text-align: center; }
-        h1 { color: #38bdf8; margin-bottom: 10px; }
-        p { color: #94a3b8; }
-        .links { display: grid; gap: 10px; margin-top: 20px; }
-        .btn { background: #38bdf8; color: #0f172a; padding: 12px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        .btn:hover { background: #7dd3fc; transform: translateY(-3px); }
-        .todo { text-align: left; background: #334155; padding: 15px; border-radius: 10px; margin-top: 20px; }
-        .todo h3 { margin-top: 0; font-size: 1rem; color: #fbbf24; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        h2 { color: #2980b9; margin-top: 30px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .info-box {
+            display: flex;
+            justify-content: space-around;
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Student Hub 🚀</h1>
-        <p>Dashboard Persiapan Ujian & Kuliah</p>
-        
-        <div class="todo">
-            <h3>📌 Agenda Siswa Kelas 12:</h3>
-            <div>- Belajar untuk Ujian Sekolah</div>
-            <div>- Cek pengumuman SNBP/SNBT</div>
-            <div>- Latihan Coding Python</div>
-        </div>
 
-        <div class="links">
-            <a href="https://paspor-akun.simpkb.id/" class="btn" target="_blank">Portal Pendidikan</a>
-            <a href="https://snpmb.bppp.kemdikbud.go.id/" class="btn" target="_blank">Info Kampus (SNPMB)</a>
-            <a href="https://pijarbelajar.id/" class="btn" target="_blank">Materi Belajar</a>
-        </div>
+<div class="container">
+    <header>
+        <h1>MANAJEMEN KELAS XII-G</h1>
+        <p>Tahun Ajaran 2025/2026</p>
+    </header>
+
+    <div class="info-box">
+        <span>Jumlah Siswa: 37</span>
+        <span>Ketua Kelas: edelwin suviriyananda</span>
+        <span>Ruang: Lab Komputer / Kelas 12</span>
     </div>
+
+    <h2>📅 Jadwal Pelajaran</h2>
+    <table>
+        <tr>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jumat</th>
+        </tr>
+        <tr>
+            <td>B.INDONESIA</td>
+            <td>SENI BUDAYA</td>
+            <td>PKN</td>
+            <td>INFORMATIKA</td>
+            <td>PJOK</td>
+        </tr>
+        <tr>
+            <td>MTK LANJUT</td>
+            <td>AGAMA</td>
+            <td>FISIKA</td>
+            <td>FISIKA</td>
+        </tr>
+        <tr>
+            <td>PKWU</td>
+            <td>MTK WAJIB</td>
+            <td>FISIKA</td>
+            <td>KIMIA</td>
+            <td>INFORMATIKA</td>
+        </tr>
+    </table>
+
+    <h2>🧹 Jadwal Piket Kebersihan</h2>
+    <table>
+        <tr>
+            <th>Hari</th>
+            <th>Petugas Piket</th>
+        </tr>
+        <tr>
+            <td>Senin</td>
+            <td>Andi, Budi, Citra, Dina</td>
+        </tr>
+        <tr>
+            <td>Selasa</td>
+            <td>Eko, Fani, Gani, Hana</td>
+        </tr>
+        <tr>
+            <td>Rabu</td>
+            <td>Irfan, Jaka, Kezia, Lita</td>
+        </tr>
+    </table>
+
+    <footer style="text-align: center; margin-top: 30px; font-size: 0.8rem; color: #888;">
+        Website Kelas XII &copy; 2026
+    </footer>
+</div>
+
 </body>
 </html>
